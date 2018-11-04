@@ -56,6 +56,7 @@ You're in for a treat.
   * Linux:
 
   $ make -C target_firmware
+  > maybe you'll need to install cmake first.
 
 You will end up with two .fw files - one for the AR7010 and one for
 the AR9271 in the target_firmware directory.
@@ -69,6 +70,8 @@ by doing:
 
 Then what?
 ----------
+
+Move the desired .fw file into /lib/firmware/ and voila.
 
 You need to then copy this into the relevant location for your operating
 system.  Yes, this means you need a driver.  No, there's no FreeBSD
