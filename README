@@ -45,32 +45,17 @@ How do I build it?
 
 You're in for a treat.
 
-* Install the cmake build tool (http://www.cmake.org/).
-  Major distributions have packages for this.
-
-* For FreeBSD - install gmake and wget.
-
 * You first have to build the toolchain.
 
   * Linux:
 
   $ make toolchain
 
-  * FreeBSD:
-
-  $ gmake toolchain
-
-  (Yes, I made this work on FreeBSD as well.)
-
 * Next, build the firmware.
 
   * Linux:
 
   $ make -C target_firmware
-
-  * FreeBSD:
-
-  $ gmake -C target_firmware
 
 You will end up with two .fw files - one for the AR7010 and one for
 the AR9271 in the target_firmware directory.
@@ -81,10 +66,6 @@ by doing:
   * Linux:
 
   $ make -C target_firmware clean
-
-  * FreeBSD:
-
-  $ gmake -C target_firmware clean
 
 Then what?
 ----------
@@ -98,16 +79,3 @@ Where do I file bugs?
 ---------------------
 
 Please file bugs in github - http://github.com/qca/open-ath9k-htc-firmware/issues .
-
-
-Mailing lists?
---------------
-
-Here you go:
-
-http://lists.infradead.org/mailman/listinfo/ath9k_htc_fw
-
-And
-
-ath9k_htc_fw@lists.infradead.org
-
